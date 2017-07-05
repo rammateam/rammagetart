@@ -1,6 +1,6 @@
 import {URL} from './../../config.js'
 // const xml2js = require('xml2js');
-const parser = new xml2js.Parser();
+// const parser = new xml2js.Parser();
 var myInit = { method: 'GET',
                mode: 'no-cors',
                cache: 'default' };
