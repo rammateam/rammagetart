@@ -1,18 +1,20 @@
 import {URL} from './../../config.js'
 // const xml2js = require('xml2js');
 const parser = new xml2js.Parser();
-const request = require('request');
-request('http://thegamesdb.net/api/GetArt.php?id=2', function (error, response, body) {
-  console.log('error:', error); // Print the error if one occurred
-  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-  console.log('body:', body); // Print the HTML for the Google homepage.
+var myInit = { method: 'GET',
+               mode: 'no-cors',
+               cache: 'default' };
 
-const getApiData=body;
-  export {
-    getApiData
-  }
+const ApiData=()=>{
+  fetch('https://thegamesdb.net/api/GetArt.php?id=2', myInit).then(function(response) {
+    return response.blob();
+  }).then(function(myBlob) {
+    var objectURL = URL.createObjectURL(myBlob);
+    myImage.src = objectURL;
 
-});
+  });
+}
+
 
 // const getApiData = () => {
 //   const xhttp = new XMLHttpRequest();
@@ -29,3 +31,6 @@ const getApiData=body;
 //   xhttp.open("GET", URL, true);
 //   xhttp.send();
 // }
+export {
+  getApiData
+}
