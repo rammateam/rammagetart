@@ -16,7 +16,7 @@ app.get('/images', (req, res) => {
     getImages(id, (err, result) => {
       if(err) {
         console.log('err',err);
-        return res.end({'err': 'error fetching images'}).status(400);
+        return res.json({'err': 'error fetching images'}).status(400);
       }
       const url = result.Data.baseImgUrl[0];
       if (result.Data.Images[0].fanart) {
