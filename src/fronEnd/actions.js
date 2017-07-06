@@ -16,7 +16,6 @@ const getApiData = () => {
     }
   };
   xhttp.open("GET", URL, true);
-  xhttp.setRequestHeader("Access-Control-Allow-Origin", 'http://thegamesdb.net')
   xhttp.send();
 }
 export {
