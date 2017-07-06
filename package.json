@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mhmdshorafa/start_express_react.git#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.4.0",
