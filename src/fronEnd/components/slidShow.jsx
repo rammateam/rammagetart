@@ -11,11 +11,11 @@ class SimpleSlider extends Component {
     }
   }
   componentWillMount() {
-     getApiData((image)=>{
-
-       console.log('image',image);
-     })
-     this.setState({images:image})
+    //  getApiData((image)=>{
+     //
+    //    console.log('image',image);
+    //  })
+    //  this.setState({images:image})
   }
   render() {
 
@@ -29,6 +29,13 @@ class SimpleSlider extends Component {
     return (
 
       <Slider className='main' {...settings}>
+        <div>
+                 <img src='https://www.w3schools.com/css/img_fjords.jpg'/ >
+               </div>
+         <div>
+           <img src='https://www.w3schools.com/css/img_lights.jpg'/>
+         </div>
+
       </Slider>
 
     );

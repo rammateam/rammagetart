@@ -23,8 +23,20 @@ body{
   left: 0;
   z-index: 9999;
   width: 100%;
+  vertical-align: middle;
+
 }
 
 .Demo__some-network div[role = button]{
   display: inline-block;
+}
+.icon{
+  margin: 13px;
+}
+.share{
+  margin-left: 19px;
+}
+.share-button{
+  margin-left: 49px;
+margin-top: 11px
 }

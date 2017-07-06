@@ -13,7 +13,7 @@ export default class ShareButton extends Component {
 
     return (
       <div className="Demo__container">
-        
+
         <div className="Demo__some-network">
           <FacebookShareButton
             url={shareUrl}
