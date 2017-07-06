@@ -1,10 +1,15 @@
 import React from 'react';
 import ShareButton from './shareFacebook.js';
-import ApiData from './apiData.js';
+import SimpleSlider from './slidShow.jsx'
 const App = () => {
 
-  return <div><ShareButton /><ApiData /></ div>
+  return <div>
+    <div className='content'>
+      <ShareButton/>
+    </div>
+    <SimpleSlider/>
+    </div>
 
-  }
+}
 
 module.exports = App;

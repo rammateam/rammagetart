@@ -34,6 +34,8 @@
     "react-share": "^1.15.0",
     "redux": "^3.6.0",
     "webpack": "^2.4.1",
+    "react-slick": "^0.14.11",
+    "slick-carousel": "^1.6.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {

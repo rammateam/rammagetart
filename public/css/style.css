@@ -1,0 +1,30 @@
+.main {
+  margin: 0 auto;
+}
+
+* {
+  box-sizing : border-box;
+}
+body{
+  margin: 0;
+}
+.slick-slide img{
+  width: 100%;
+  height: 100vh;
+}
+
+.slick-dots{
+  position: static!important;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.Demo__some-network div[role = button]{
+  display: inline-block;
+}
