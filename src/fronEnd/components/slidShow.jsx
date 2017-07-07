@@ -11,13 +11,14 @@ const SimpleSlider = ({imagesList})=> {
         <div key={index}><ImagesList image={item}/></div>
       )
     })
-    console.log(list);
-    var settings = {
+    const settings = {
       autoplay: true,
       fade: true,
-      autoplaySpeed: 400   }
+      autoplaySpeed: 450,
+      pauseOnHover: false,
+    }
     return (
-      <Slider className='main' {...settings}>
+      <Slider {...settings} className='main' >
         {list}
       </Slider>
 
