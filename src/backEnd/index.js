@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/images', (req, res) => {
   const fullImages = () => {
-    const id = (Math.floor(Math.random() * 1000) + 1).toString();
+    const id = (Math.floor(Math.random() * 1000) + 1).toString()
     getImages(id, (err, result) => {
       if (err) {
         return res.json({
