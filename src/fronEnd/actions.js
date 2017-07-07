@@ -6,6 +6,7 @@ const getImages = (cb) => {
       return response.json()
     })
     .then((response) => {
+      console.log('response',response);
       cb(response)
     }).catch((error) => {
       console.log('error in fetch', error);

@@ -15,8 +15,7 @@ const SimpleSlider = ({imagesList})=> {
     var settings = {
       autoplay: true,
       fade: true,
-      autoplaySpeed: 500,
-    }
+      autoplaySpeed: 400   }
     return (
       <Slider className='main' {...settings}>
         {list}
