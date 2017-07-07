@@ -3,17 +3,19 @@
 }
 
 * {
-  box-sizing : border-box;
+  box-sizing: border-box;
 }
-body{
+
+body {
   margin: 0;
 }
-.slick-slide img{
+
+.slick-slide img {
   width: 100%;
   height: 100vh;
 }
 
-.slick-dots{
+.slick-dots {
   position: static!important;
 }
 
@@ -24,19 +26,21 @@ body{
   z-index: 9999;
   width: 100%;
   vertical-align: middle;
-
 }
 
-.Demo__some-network div[role = button]{
+.Demo__some-network div[role=button] {
   display: inline-block;
 }
-.icon{
+
+.icon {
   margin: 13px;
 }
-.share{
+
+.share {
   margin-left: 19px;
 }
-.share-button{
-  margin-left: 49px;
-margin-top: 11px
+
+.share-button {
+  margin-left: 45px;
+  margin-top: 11px
 }

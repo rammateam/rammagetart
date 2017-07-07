@@ -12,9 +12,9 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.get('/images', (req, res) => {
-  console.log('ssss');
   const fullImages = () => {
-    const id = (Math.floor(Math.random() * 1000) + 1).toString();
+    const id = (Math.floor(Math.random() * 1000) + 1).toString()
+    console.log('backend',id);
     getImages(id, (err, result) => {
       if(err) {
         console.log('err',err);
@@ -24,8 +24,10 @@ app.get('/images', (req, res) => {
       if (result.Data.Images[0].fanart) {
         images = images.concat(result.Data.Images[0].fanart.map((data) => url + data.original[0]._));
         if (images.length < 3) {
+          console.log('less iamges');
           fullImages();
         } else {
+          console.log('full images');
           return res.json(images);
         }
       }
