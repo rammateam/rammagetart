@@ -1,12 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const {
-  PORT
-} = require('../../config.js');
-const {
-  getImages
-} = require('./utils/utils.js');
+const {PORT} = require('../../config.js');
+const {getImages} = require('./utils/utils.js');
 
 var images = [];
 
@@ -28,11 +24,7 @@ app.get('/images', (req, res) => {
         if (images.length < 3) {
           fullImages();
         } else {
-          if (images.length > 6) {
-            return res.json(images.slice(0, 5))
-          } else {
-            return res.json(images)
-          }
+          return res.json(images);
         }
       } else {
         fullImages();
