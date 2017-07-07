@@ -13,14 +13,14 @@ export default class ShareButton extends Component {
 
     return (
       <div className="Demo__container">
-        
+
         <div className="Demo__some-network">
           <FacebookShareButton
             url={shareUrl}
             title={title}
             className="Demo__some-network__share-button">
             <FacebookIcon
-              size={32}
+              size={37}
               round />
           </FacebookShareButton>
         </div>
@@ -31,7 +31,7 @@ export default class ShareButton extends Component {
             title={title}
             className="Demo__some-network__share-button">
             <TwitterIcon
-              size={32}
+              size={37}
               round />
           </TwitterShareButton>
         </div>
@@ -42,7 +42,7 @@ export default class ShareButton extends Component {
             title={title}
             separator=":: "
             className="Demo__some-network__share-button">
-            <WhatsappIcon size={32} round />
+            <WhatsappIcon size={37} round />
           </WhatsappShareButton>
         </div>
 
