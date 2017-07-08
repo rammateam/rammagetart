@@ -10,7 +10,6 @@ import ImagesList from '../components/imagesList.jsx';
 class SimpleSlider extends Component{
     constructor(props){
       super(props);
-
       this.state = {
         interval: null
       }
@@ -35,8 +34,6 @@ class SimpleSlider extends Component{
         )
       })
       const settings = {
-        speed: 2000,
-        fade: true,
         pauseOnHover: false,
         draggable:false
       }
