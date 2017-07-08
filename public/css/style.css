@@ -28,10 +28,6 @@ body {
   vertical-align: middle;
 }
 
-.Demo__some-network div[role=button] {
-  display: inline-block;
-}
-
 .icon {
   margin: 13px;
 }
@@ -40,7 +36,24 @@ body {
   margin-left: 19px;
 }
 
-.share-button {
-  margin-left: 45px;
-  margin-top: 11px
+.logo{
+  height: 47px;
+  width : 187px;
+}
+
+.popup{
+  text-align: center;
+  width: 100px;
+}
+
+.share-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 11%;
+}
+
+.Demo__container{
+  display: flex;
+  justify-content: flex-start;
 }

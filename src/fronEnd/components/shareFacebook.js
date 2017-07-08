@@ -10,7 +10,7 @@ export default class ShareButton extends Component {
   render() {
     const shareUrl = 'www.gamiflux.com';
     const title = 'To play PC games on Xbox One, please visit :';
-    const img = 'https://github.com/rammateam/rammagetart/raw/master/vector.eps.jpg';
+    const img = 'https://github.com/rammateam/rammagetart/blob/master/19814232_10211892389678965_2102624803_o.jpg';
     return (
       <div className="Demo__container">
 
@@ -21,7 +21,7 @@ export default class ShareButton extends Component {
             picture={img}
             className="Demo__some-network__share-button">
             <FacebookIcon
-              size={37}
+              size={36}
               round />
           </FacebookShareButton>
         </div>
@@ -32,7 +32,7 @@ export default class ShareButton extends Component {
             title={title + shareUrl}
             className="Demo__some-network__share-button">
             <TwitterIcon
-              size={37}
+              size={36}
               round />
           </TwitterShareButton>
         </div>
@@ -43,7 +43,7 @@ export default class ShareButton extends Component {
             title={title}
             separator=":: "
             className="Demo__some-network__share-button">
-            <WhatsappIcon size={37} round />
+            <WhatsappIcon size={36} round />
           </WhatsappShareButton>
         </div>
 
