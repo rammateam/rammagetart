@@ -8,9 +8,9 @@ const WhatsappIcon = generateShareIcon('whatsapp');
 
 export default class ShareButton extends Component {
   render() {
-    const shareUrl = 'http://github.com';
-    const title = 'GitHub';
-
+    const shareUrl = 'www.gamiflux.com';
+    const title = 'To play PC games on Xbox One, please visit :';
+    const img = 'https://github.com/rammateam/rammagetart/raw/master/vector.eps.jpg';
     return (
       <div className="Demo__container">
 
@@ -18,6 +18,7 @@ export default class ShareButton extends Component {
           <FacebookShareButton
             url={shareUrl}
             title={title}
+            picture={img}
             className="Demo__some-network__share-button">
             <FacebookIcon
               size={37}
@@ -28,7 +29,7 @@ export default class ShareButton extends Component {
         <div className="Demo__some-network">
           <TwitterShareButton
             url={shareUrl}
-            title={title}
+            title={title + shareUrl}
             className="Demo__some-network__share-button">
             <TwitterIcon
               size={37}
