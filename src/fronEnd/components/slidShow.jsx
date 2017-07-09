@@ -35,7 +35,8 @@ class SimpleSlider extends Component{
       })
       const settings = {
         pauseOnHover: false,
-        draggable:false
+        draggable:false,
+        fade:true
       }
     return (
       <Slider ref={c => this.slider = c } {...settings} className='main' >
