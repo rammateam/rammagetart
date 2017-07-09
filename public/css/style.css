@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
   width: 5%;
   position: fixed;
-  bottom: 1px;
+  bottom: 3px;
   z-index: 9999999;
   transform: translateX(-125%);
   text-align: center;
@@ -64,3 +64,9 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+/*.share alternate icon{
+  width : 20px;
+}
+.ui grey mini circular icon button{
+  bottom: 20px;
+}*/
