@@ -64,9 +64,8 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-/*.share alternate icon{
-  width : 20px;
+.ui.icon.button>.icon, .ui.icon.buttons .button>.icon {
+   display: block;
+   margin:-4px!important;
+
 }
-.ui grey mini circular icon button{
-  bottom: 20px;
-}*/

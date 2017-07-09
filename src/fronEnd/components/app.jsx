@@ -44,7 +44,7 @@ class App extends React.Component {
               backgroundColor: '#323232',
               width: '22px',
               height: '22px'
-            }} circular onClick={this.onShare} color={this.state.shareBG} size='mini' icon='share alternate'>
+            }} circular onClick={this.onShare}  color={this.state.shareBG} size='mini' icon='share alternate'>
             </Button>
 
           </div>
