@@ -4,7 +4,7 @@ const app = express();
 const {PORT} = require('../../config.js');
 const {getImages} = require('./utils/utils.js');
 
-var images = [];
+var allImages = [];
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -20,7 +20,7 @@ app.get('/images', (req, res) => {
       }
       const url = result.Data.baseImgUrl[0];
       if (result.Data.Images[0].fanart) {
-        images = images.concat(result.Data.Images[0].fanart.map((data) => url + data.original[0]._));
+        images = allImages.concat(result.Data.Images[0].fanart.map((data) => url + data.original[0]._));
         if (images.length < 3) {
           fullImages();
         } else {

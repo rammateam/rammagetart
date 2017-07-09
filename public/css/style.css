@@ -36,24 +36,31 @@ body {
   margin-left: 19px;
 }
 
-.logo{
+.logo {
   height: 47px;
-  width : 187px;
+  width: 187px;
 }
 
-.popup{
+.popup {
   text-align: center;
   width: 100px;
 }
 
-.share-icon{
+.share-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 11%;
+  width: 5%;
+  position: fixed;
+  bottom: 1px;
+  z-index: 9999999;
+  transform: translateX(-125%);
+  text-align: center;
+  left: 58.44444%;
 }
 
-.Demo__container{
+
+.Demo__container {
   display: flex;
   justify-content: flex-start;
 }
