@@ -5,6 +5,7 @@ const getImages = (id,cb) => {
   axios.get(`http://thegamesdb.net/api/GetArt.php?id=${id}`)
      .then((result) => {
        parseString(result.data, (err, result) => {
+         console.log(result);
          cb(err,result)
        });
      })
