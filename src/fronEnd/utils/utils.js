@@ -46,7 +46,7 @@ const randomImage = () => {
   console.log(images[index]);
   var initialImageArray = [];
   initialImageArray.push(images[index]);
-  console.log('initial',initialImageArray);
+  localStorage.setItem('initialPhoto',images[index]);
   return initialImageArray;
 }
 
