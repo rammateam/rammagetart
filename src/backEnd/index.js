@@ -9,8 +9,6 @@ const {
   randomArray
 } = require('./utils/utils.js');
 
-var allImages = [];
-
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
@@ -19,12 +17,16 @@ app.get('/images', (req, res) => {
     const requestsArray = randomArray();
     getImages(requestsArray, (err, result) => {
       if (err) {
-        console.log('err', err);
         return res.json({
           'err': 'error fetching images'
         }).status(400);
       }
-      return res.json(result);
+      if (result.length < 5) {
+        fullImages();
+      }
+      else {
+        return res.json(result);
+      }
     });
   }
   fullImages();

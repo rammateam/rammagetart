@@ -5,6 +5,9 @@ var allImages = [];
 var filtered =[];
 
 const getImages = (idsArr,cb) => {
+  if(filtered.length > 5){
+    filtered = [];
+  }
   idsArr.map((id) => {
     axios.get(`http://thegamesdb.net/api/GetArt.php?id=${id}`)
     .then((result) => {
@@ -29,7 +32,7 @@ const getImages = (idsArr,cb) => {
     }
     const randomArray = () => {
       var randomRequest =[] ;
-      for(i = 0; i < 6; i++){
+      for(i = 0; i < 8; i++){
         const id = (Math.floor(Math.random() * 1000) + 1).toString()
         randomRequest.push(id);
       }
