@@ -1,33 +1,31 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const {PORT} = require('../../config.js');
-const {getImages} = require('./utils/utils.js');
-
-var allImages = [];
+const {
+  PORT
+} = require('../../config.js');
+const {
+  getImages,
+  randomArray
+} = require('./utils/utils.js');
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.get('/images', (req, res) => {
   const fullImages = () => {
-    const id = (Math.floor(Math.random() * 1000) + 1).toString()
-    getImages(id, (err, result) => {
+    const requestsArray = randomArray();
+    getImages(requestsArray, (err, result) => {
       if (err) {
         return res.json({
           'err': 'error fetching images'
         }).status(400);
       }
-      const url = result.Data.baseImgUrl[0];
-      if (result.Data.Images[0].fanart) {
-        images = allImages.concat(result.Data.Images[0].fanart.map((data) => url + data.original[0]._));
-        if (images.length < 3) {
-          fullImages();
-        } else {
-          return res.json(images);
-        }
-      } else {
+      if (result.length < 5) {
         fullImages();
+      }
+      else {
+        return res.json(result);
       }
     });
   }
